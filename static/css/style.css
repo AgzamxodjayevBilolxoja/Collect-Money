@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    height: 110px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav button {
+    width: 1000px;
+    height: 70px;
+    background: none;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav button img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.add_folder {
+    width: 1000px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: none;
+    margin: 20px auto;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.add_folder h2 {
+    border: none;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.add_folder_active {
+    height: 180px;
+    flex-wrap: wrap;
+}
+
+.add_folder_active form {
+    width: 1000px;
+    height: 80px;
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.add_folder_active form input {
+    width: 800px;
+    height: 30px;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+
+.add_folder_active form button {
+    width: 800px;
+    height: 30px;
+    background: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.folders {
+    width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.folder {
+    width: 1000px;
+    border: 1px solid black;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.folder h2 {
+    width: 800px;
+    height: 40px;
+    text-align: start;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    font-size: 24px;
+}
+
+.add_money {
+    width: 800px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background: none;
+    margin: 20px auto;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.add_money h2 {
+    border: none;
+    font-size: 20px;
+}
+
+.add_money_active {
+    height: 100px;
+}
+
+.folder div {
+    width: 800px;
+    height: auto;
+}
+
+.folder div h3 {
+    width: 800px;
+    height: 20px;
+    text-align: start;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.folder div form {
+    width: 800px;
+    height: 60px;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form button {
+    width: 650px;
+    height: 30px;
+    background: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+form p {
+    height: 30px;
+    width: 150px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+@media (max-width: 1025px) {
+    .container {
+        width: 900px;
+    }
+
+    nav button,
+    .add_folder,
+    .folders,
+    .folder {
+        width: 700px;
+    }
+
+    .add_money,
+    .folder h2,
+    .folder div,
+    .folder div form {
+        width: 600px;
+    }
+
+    form button {
+        width: 450px;
+    }
+}
+
+@media (max-width: 769px) {
+    .container {
+        width: 700px;
+    }
+
+    nav button,
+    .add_folder,
+    .folders,
+    .folder {
+        width: 650px;
+    }
+
+    .add_money,
+    .folder h2,
+    .folder div,
+    .folder div form {
+        width: 600px;
+    }
+
+    form button {
+        width: 450px;
+    }
+}
+
+@media (max-width: 426px) {
+    .container {
+        width: 400px;
+    }
+
+    nav button,
+    .add_folder,
+    .folders,
+    .folder {
+        width: 350px;
+    }
+
+    .add_money,
+    .folder h2,
+    .folder div,
+    .folder div form {
+        width: 300px;
+    }
+
+    form button {
+        width: 150px;
+    }
+}
+
+@media (max-width: 376px) {
+    .container {
+        width: 350px;
+    }
+
+    nav button,
+    .add_folder,
+    .folders,
+    .folder {
+        width: 325px;
+    }
+
+    .add_money,
+    .folder h2,
+    .folder div,
+    .folder div form {
+        width: 275px;
+    }
+
+    form button {
+        width: 175px;
+    }
+
+    form p {
+        width: 100px;
+        height: 30px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 321px) {
+    .container {
+        width: 300px;
+    }
+
+    nav button,
+    .add_folder,
+    .folders,
+    .folder {
+        width: 290px;
+    }
+
+    .add_money,
+    .folder h2,
+    .folder div,
+    .folder div form {
+        width: 275px;
+    }
+
+    form button {
+        width: 175px;
+    }
+
+    form p {
+        width: 100px;
+        height: 30px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        font-size: 14px;
+    }
+}
